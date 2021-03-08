@@ -5,7 +5,7 @@ minXlim <- 0  # Longitude in decimal degrees
 maxXlim <- 0 # Longitude in decimal degrees
 minYlim <- 0 # Latitude in decimal degrees
 maxYlim <- 0 # Latitude in decimal degrees
-rasterResolution <- "30s" # Must be 10m, 5m, 2.5m, or 30s
+rasterResolution <- "2.5m" # Must be 10m, 5m, 2.5m, or 30s
 path30s <- "GIS/WorldClim/wc2.1_30s_bio/"
 path2.5m <- "GIS/WorldClim/wc2.1_2.5m_bio/"
 path5m <- "GIS/WorldClim/wc2.1_5m_bio/"
@@ -68,6 +68,8 @@ futureModel <- "no" # Select whether to model future climate model or present da
   mexicoHD <- getData(name="GADM", download = TRUE, level = 1, country = "MEX")
   mexico.states.simple <- gSimplify(mexicoHD, tol = 0.01, topologyPreserve = TRUE)
   greatLakes <- st_read("./Great_Lakes/Great_Lakes.shp")
+  countiesHD <- getData(name="GADM", download = TRUE, country="USA", level=2)
+  counties.simple <- gSimplify(countiesHD, tol = 0.01, topologyPreserve = TRUE)
 
   # Prepare world cities
   data("world.cities")
