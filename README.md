@@ -1,5 +1,5 @@
 # Carolina-Edible-Plants
-Companion maps for Edible Wild Plants of the Carolinas: A Forager’s Companion. 
+Companion maps for Edible Wild Plants of the Carolinas: A Forager’s Companion found at [https://peterwschafran.com/CarolinaEdiblePlants.html](https://peterwschafran.com/CarolinaEdiblePlants.html)
 
 
 
